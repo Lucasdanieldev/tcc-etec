@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyber Information</title>
+<link rel="stylesheet" href="css/style_cadastro.css">
+<link rel="icon" href="img/lg/logi.png" type="image/x-icon" />
+<link href="css/style_botao.css" rel="stylesheet">
+<link href="css/style_botao.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<script language="javascript">
+    function validaform(){
+    dados = document.cadastro;
+    if (dados.nome.value=="")
+                        {alert ("O campo "+ dados.nome.name +" deve ser preenchido!");
+                            dados.nome.focus()}
+                            else
+                                if(dados.email.value==""){
+                                    alert ("O campo "+ dados.email.name+ " deve ser preenchido!");
+                                            dados.email.focus()
+                                }
+                                else
+                                if(dados.comentario.value==""){
+                                    alert ("O campo "+ dados.comentario.name+ " deve ser preenchido!");
+                                            dados.comentario.focus()
+                                }
+                            
+    }
+    </script>
+</head>
+<body>
+    <nav>
+        <!--logo tipo-->
+            <img class="logo" src="img/lg/logi.png">
+                <div class="cb"><a href="home.html">Cyber Information</div></a>
+        <!--fechamento de logo-->
+            <!-- liks de menu-->
+                <ul class="menu">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">Notificação</a>
+                    </li>
+                    <li>
+                         <a href="fale_conosco.html">Dúvidas</a>
+                    </li>
+                    <li>
+                        <a href="sobre_nos.html">Sobre nós</a>
+                    </li>    
+                    <li>
+                        <a href="noticia.html">Notícia </a> 
+                    </li>
+                    <li>
+                        <a href="jogo.html">Jogo </a> 
+                    </li>
+                
+                <!--imagens das redes sociais -->    
+                    <a href="https://www.facebook.com/Cyber-Information-103052129127665"><img class="redes" src="img/redes_sociais/face.png"></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1ik848ds6z75f&utm_content=oqpyej2"><img class="redes" src="img/redes_sociais/insta.png"></a>
+                    <a href="https://www.linkedin.com/in/cyber-information-9ba128243"><img class="redes" src="img/redes_sociais/linke.png"></a>
+                    <a href="https://twitter.com/Cybeinformation?t=6ECRCiznYzGCrm5inugfiA&s=09"><img class="redes" src="img/redes_sociais/tw.png"></a>
+                
+                <!--fechamento das redes sociais-->    
+                    <!--botão noturno-->
+                    <p><div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                          <div class="ball"></div>
+                        </label>
+                    </div>
+                    </p>
+                      <script src="js/script_botao.js"></script>
+                      
+    
+                    <!--fechamento do botao noturno-->
+                    <div class="search-box">
+                      <input class="search-txt" name="" placeholder="Pesquise ">
+                      <a class="search-btn" href="#">
+                          <i class="fas fa-search"></i>
+                      </a>
+                  </div>
+        </nav>
+    </body>
+
+    <article>
+        <p class="text">Manter atualizado tem se tornado mais importante do que nunca com tantas coisas acontecendo no país e no mundo. Para isso, você pode apenas abrir a sua caixa de mensagem do e-mail e ter acesso a assuntos sobre segurançada informação que te interessem em tempo real. Cadastre-se e receba motícias em primeira mão.</p>
+        <p class="text" id="texto">Então, fique ligado, porque de hoje em diante seremos seus companheiro. Sempre que tivermos notícias, mandaremos lá.</p>
+
+    </article>
+        <p></p>
+            <center>
+                <form>
+                    <input type="text" name="nome" placeholder="Nome*">
+        <p></p>
+                        <input type="email" name="email" placeholder="E-mail*">
+        <p></p>
+        <input type="submit" name="enviar" value="Enviar" onClick="validaform()">                  
+        <input type="reset" name="limpar" value="Limpar">
+                                
+            </center>
+                </form>
+<!--footer-->
+<footer>
+    <div class="footer">  
+        <h1 class="foo" >CyberInformation.com</h1>
+        
+            <a class="menu_footer" href="home.html">Home</a>
+            <a class="menu_footer" href="cadastro.html">Notificação</a>    
+            <a class="menu_footer" href="fale_conosco.html">Dúvidas</a>
+            <a class="menu_footer" class="menu" href="sobre_nos.html">Sobre nós</a>
+            <a class="menu_footer" href="noticia.html">Notícia </a>  
+            <a class="menu_footer" href="jogo.html">Jogo </a>
+             <p></p>
+             <a href="https://www.facebook.com/Cyber-Information-103052129127665"><img class="redes1" src="img/redes_sociais/face.png"></a>
+             <a href="https://www.instagram.com/invites/contact/?i=1ik848ds6z75f&utm_content=oqpyej2"><img class="redes1" src="img/redes_sociais/insta.png"></a>
+             <a href="https://www.linkedin.com/in/cyber-information-9ba128243"><img class="redes1" src="img/redes_sociais/linke.png"></a>
+             <a href="https://twitter.com/Cybeinformation?t=6ECRCiznYzGCrm5inugfiA&s=09"><img class="redes1" src="img/redes_sociais/tw.png"></a>
+</div>
+</footer>
+   <!--fechamento de footer-->
+</body>
+</html>

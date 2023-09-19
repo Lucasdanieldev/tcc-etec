@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    border: 0;
+    font-family: "Candara";
+    list-style: none;
+  color: #000;
+  }
+  h1,h2,h3,h4{
+    font-family: "Century Gothic";
+  }
+ 
+
+
+
+#game{
+	position: relative;
+	width: 1325px;
+	height: 495px;
+	border: 1px solid #111;
+	border-radius: 10px;
+	margin: 10px auto;
+	background-color:#006394;
+}
+
+.card{
+	width: 160px;
+	height: 240px;
+	perspective: 600px;
+	position: absolute;
+	border-radius: 10px;
+}
+
+.face{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all 1s;
+	backface-visibility: hidden;
+}
+
+.front{
+	transform: rotateY(-180deg);
+}
+
+.flipped.front{
+	transform: rotateY(0deg);
+}
+
+.back{
+	background: url(../img/verso.jpg);
+}
+
+.flipped.back{
+	transform: rotateY(180deg);
+}
+
+.card:hover, .face.flipped{
+	box-shadow: 0 0 10px #aaa;
+}
+
+.face.flipped.match{
+	box-shadow: 0 0 10px #0f0;
+}
+
+#match{
+	position: relative;
+	margin: 0 auto;
+	top: 250px;
+	z-index: -1;
+	opacity: 1;
+	transition-property: top, opacity;
+	transition-duration: 1.5s;
+}
+
+#gameOver{
+	position: absolute;
+	top: 0;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -2;
+}
+
+#imgGameOver{
+	margin-top: 100px;
+}
+
+   /*MENU*/
+nav{
+	width: 100%;
+	height: 75px;
+	background-color: #006394;
+	display: flex;
+	
+	} 
+	.logo{
+	  height: 60px;
+	  width: 50px;
+	 margin-left: 20px;
+	 margin-top: 7px;
+	}
+	.cb{
+	  color: #fff;
+	  margin-top: 22px;
+	  margin-left: 15px;
+	  font-size: 25px;
+	  
+	}
+	.menu{
+	  list-style: none;
+	  padding-left: 120px;
+	  font-size: 20px;
+	  position: relative;
+	  bottom: 5px;
+	}
+	.menu li{
+	  display: inline;
+	}
+	  .menu li a{ 
+		display: inline-block;
+		text-decoration: none;
+		display: inline;
+	  }
+	  li{
+		margin-right: 35px;
+	  }
+	  .redes{
+		width: 30px;
+		height: 30px;
+		position: relative;
+		top: 8px;
+    left: 250px;
+	  }
+	  .menu li a:hover{
+		color: #1e90ff;
+	}
+	.redes a img:hover{
+	  background-color: #1e90ff;
+	}
+	a{
+	  color: #fff;
+	}
+  
+   /*bt*/
+   .label {
+	background-color: #000;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 18px;
+	width: 36px;
+	transform: scale(1.5);
+	margin-left: 1065px;
+	bottom: 40PX;
+  }
+  /*/bt*/
+  .search-box{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    background: #000;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    bottom: 30px;
+
+}
+.search-box:hover > .search-txt{
+    width: 150px;
+    padding: 0 6px;
+    top: 50px;
+}
+
+.search-btn{
+    color: #006394;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 18px;
+ transition: 0.4s;   
+ line-height: 40px;
+ width: 0px;
+ 
+}
+ /*footer*/
+ footer{
+	width: 100%;
+	height: 230px;
+	background-color: #006494;
+	color:#fff;
+	text-align: center;
+	position: relative;
+}
+.foo{
+	padding-top: 43px;
+	
+}
+.menu_footer{
+	color: #fff;
+  padding-top: 50px;
+  display: inline-block;
+  text-decoration: none;
+  display: inline;
+  margin-left: 25px;
+  font-size: 17px;
+}
+
+
+.redes1{
+  width: 40px;
+  height: 40px;
+}
+.menu_footer:hover{
+  color: #1e90ff;
+}
+  /*fechamento de footer*/
+  a{
+	text-decoration: none;
+  }

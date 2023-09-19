@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    border: 0;
+    font-family: Candara;
+    list-style: none;
+  color: #000;
+  }
+  h1,h2,h3,h4{
+    font-family: Century Gothic;
+  }
+ 
+   /*MENU*/
+nav{
+	width: 100%;
+	height: 75px;
+	background-color: #006394;
+	display: flex;
+	
+	} 
+	.logo{
+	  height: 60px;
+	  width: 50px;
+	 margin-left: 20px;
+	 margin-top: 7px;
+	}
+	.cb{
+	  color: #fff;
+	  margin-top: 22px;
+	  margin-left: 15px;
+	  font-size: 25px;
+	}
+	.menu{
+	  list-style: none;
+	  padding-left: 120px;
+	  font-size: 20px;
+	  position: relative;
+	  bottom: 5px;
+	}
+	.menu li{
+	  display: inline;
+	}
+	  .menu li a{ 
+		display: inline-block;
+		text-decoration: none;
+		display: inline;
+	  }
+	  li{
+		margin-right: 35px;
+	  }
+	  .redes{
+		width: 30px;
+		height: 30px;
+		position: relative;
+		top: 8px;
+    left: 250px;
+	  }
+	  .menu li a:hover{
+		color: #1e90ff;
+	}
+	.redes a img:hover{
+	  background-color: #1e90ff;
+	}
+	a{
+	  color: #fff;
+	}
+  
+   /*bt*/
+   .label {
+	background-color: #000;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 18px;
+	width: 36px;
+	transform: scale(1.5);
+	margin-left: 1070px;
+	bottom: 40PX;
+  }
+  /*/bt*/
+  .search-box{
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    background: #000;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    bottom: 30px;
+
+}
+.search-box:hover > .search-txt{
+    width: 150px;
+    padding: 0 6px;
+    top: 50px;
+}
+
+.search-btn{
+    color: #006394;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 18px;
+ transition: 0.4s;   
+ line-height: 40px;
+ width: 0px;
+ 
+}
+  
+
+  
+
+ main{
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top: 3rem;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    padding: 1rem;
+    height: 200px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+
+/*.redesSociais{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    padding: 1rem;
+}
+
+.redesSociais ul{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesSociais ul li{
+    width: 50%;
+}
+
+.redesSociais ul li img{
+    width: 100%;
+}
+
+.btnDiaNoite{
+    width: 10%;
+    height: 25px;
+    text-align: center;
+}
+*/
+a{
+  text-decoration: none;
+}
+
+.text{
+  font-size: 18px;
+  margin-bottom: 25px;
+  
+}
+
+section:hover{
+  color: #1e90ff;
+  box-shadow: #1e90ff 2px 3px 5px 2px;
+}
+
+.conteudo{
+    display: grid;
+    width: 60vw;
+    grid-template-columns: 20vw 20vw 20vw;
+    gap: 3rem;
+}
+
+.conteudo__cartao img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    height: 150px;
+}
+
+.conteudo__cartao p{
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.conteudoLateral{
+    display: grid;
+    position: absolute;
+    left: 75vw;
+    top: 0px;
+    margin-top: 3rem;
+    grid-template-columns: 20vw;
+	width: 320px;
+    height: 2000px;
+    margin-bottom: 3rem;
+	
+}
+
+.conteudoLateral div{
+
+	margin: 260px 20px;
+	height: 290px;
+	
+}
+/*footer*/
+        footer{
+          width: 100%;
+          height: 230px;
+          background-color: #006494;
+          color:#fff;
+          text-align: center;
+          position: relative;
+      }
+      .foo{
+          padding-top: 43px;
+          
+      }
+      .menu_footer{
+          color: #fff;
+        padding-top: 50px;
+        display: inline-block;
+        text-decoration: none;
+        display: inline;
+        margin-left: 25px;
+        font-size: 17px;
+      }
+
+      
+      .redes1{
+        width: 40px;
+        height: 40px;
+      }
+      .menu_footer:hover{
+        color: #1e90ff;
+      }
+        /*fechamento de footer*/
